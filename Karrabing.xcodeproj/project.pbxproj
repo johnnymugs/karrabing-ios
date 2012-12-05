@@ -20,6 +20,7 @@
 		AE53400D166EC5ED00B5BEA1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AEFCCE33166EBF7D00D5AA5A /* AppDelegate.m */; };
 		AE534010166EC76D00B5BEA1 /* MyStoriesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE53400F166EC76C00B5BEA1 /* MyStoriesViewController.m */; };
 		AE534011166EC76D00B5BEA1 /* MyStoriesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE53400F166EC76C00B5BEA1 /* MyStoriesViewController.m */; };
+		AE534018166ED31400B5BEA1 /* MyStoriesViewControllerSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = AE534017166ED31400B5BEA1 /* MyStoriesViewControllerSpec.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		AEFCCE24166EBF7D00D5AA5A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEFCCE23166EBF7D00D5AA5A /* UIKit.framework */; };
 		AEFCCE26166EBF7D00D5AA5A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEFCCE25166EBF7D00D5AA5A /* Foundation.framework */; };
 		AEFCCE28166EBF7D00D5AA5A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEFCCE27166EBF7D00D5AA5A /* CoreGraphics.framework */; };
@@ -45,6 +46,7 @@
 		AE53400B166EC3D100B5BEA1 /* AppDelegateSpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegateSpec.mm; sourceTree = "<group>"; };
 		AE53400E166EC76C00B5BEA1 /* MyStoriesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyStoriesViewController.h; sourceTree = "<group>"; };
 		AE53400F166EC76C00B5BEA1 /* MyStoriesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyStoriesViewController.m; sourceTree = "<group>"; };
+		AE534017166ED31400B5BEA1 /* MyStoriesViewControllerSpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MyStoriesViewControllerSpec.mm; sourceTree = "<group>"; };
 		AEFCCE1F166EBF7D00D5AA5A /* Karrabing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Karrabing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEFCCE23166EBF7D00D5AA5A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		AEFCCE25166EBF7D00D5AA5A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -98,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				AE53400B166EC3D100B5BEA1 /* AppDelegateSpec.mm */,
+				AE534017166ED31400B5BEA1 /* MyStoriesViewControllerSpec.mm */,
 				AE533FF0166EC06000B5BEA1 /* Cedar-iOS.framework */,
 				AE533FE8166EC06000B5BEA1 /* Supporting Files */,
 			);
@@ -318,6 +321,7 @@
 				AE53400C166EC3D100B5BEA1 /* AppDelegateSpec.mm in Sources */,
 				AE53400D166EC5ED00B5BEA1 /* AppDelegate.m in Sources */,
 				AE534011166EC76D00B5BEA1 /* MyStoriesViewController.m in Sources */,
+				AE534018166ED31400B5BEA1 /* MyStoriesViewControllerSpec.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
