@@ -7,6 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AE533FE4166EC06000B5BEA1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEFCCE23166EBF7D00D5AA5A /* UIKit.framework */; };
+		AE533FE5166EC06000B5BEA1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEFCCE25166EBF7D00D5AA5A /* Foundation.framework */; };
+		AE533FE6166EC06000B5BEA1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEFCCE27166EBF7D00D5AA5A /* CoreGraphics.framework */; };
+		AE533FEC166EC06000B5BEA1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AE533FEA166EC06000B5BEA1 /* InfoPlist.strings */; };
+		AE533FEE166EC06000B5BEA1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AE533FED166EC06000B5BEA1 /* main.m */; };
+		AE533FF1166EC06000B5BEA1 /* Cedar-iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE533FF0166EC06000B5BEA1 /* Cedar-iOS.framework */; };
+		AE533FFE166EC0A900B5BEA1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEFCCE25166EBF7D00D5AA5A /* Foundation.framework */; };
+		AE534003166EC0A900B5BEA1 /* Cedar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE534002166EC0A900B5BEA1 /* Cedar.framework */; };
+		AE534005166EC0A900B5BEA1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AE534004166EC0A900B5BEA1 /* main.m */; };
+		AE53400C166EC3D100B5BEA1 /* AppDelegateSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = AE53400B166EC3D100B5BEA1 /* AppDelegateSpec.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		AE53400D166EC5ED00B5BEA1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AEFCCE33166EBF7D00D5AA5A /* AppDelegate.m */; };
+		AE534010166EC76D00B5BEA1 /* MyStoriesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE53400F166EC76C00B5BEA1 /* MyStoriesViewController.m */; };
+		AE534011166EC76D00B5BEA1 /* MyStoriesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE53400F166EC76C00B5BEA1 /* MyStoriesViewController.m */; };
 		AEFCCE24166EBF7D00D5AA5A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEFCCE23166EBF7D00D5AA5A /* UIKit.framework */; };
 		AEFCCE26166EBF7D00D5AA5A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEFCCE25166EBF7D00D5AA5A /* Foundation.framework */; };
 		AEFCCE28166EBF7D00D5AA5A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEFCCE27166EBF7D00D5AA5A /* CoreGraphics.framework */; };
@@ -19,6 +32,19 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AE533FE2166EC06000B5BEA1 /* UISpecs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UISpecs.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE533FE9166EC06000B5BEA1 /* UISpecs-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UISpecs-Info.plist"; sourceTree = "<group>"; };
+		AE533FEB166EC06000B5BEA1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AE533FED166EC06000B5BEA1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AE533FEF166EC06000B5BEA1 /* UISpecs-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UISpecs-Prefix.pch"; sourceTree = "<group>"; };
+		AE533FF0166EC06000B5BEA1 /* Cedar-iOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "Cedar-iOS.framework"; path = "Frameworks/Cedar-iOS.framework"; sourceTree = "<group>"; };
+		AE533FFC166EC0A900B5BEA1 /* Specs */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Specs; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE534001166EC0A900B5BEA1 /* Specs-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Specs-Prefix.pch"; sourceTree = "<group>"; };
+		AE534002166EC0A900B5BEA1 /* Cedar.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cedar.framework; path = Frameworks/Cedar.framework; sourceTree = "<group>"; };
+		AE534004166EC0A900B5BEA1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AE53400B166EC3D100B5BEA1 /* AppDelegateSpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegateSpec.mm; sourceTree = "<group>"; };
+		AE53400E166EC76C00B5BEA1 /* MyStoriesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyStoriesViewController.h; sourceTree = "<group>"; };
+		AE53400F166EC76C00B5BEA1 /* MyStoriesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyStoriesViewController.m; sourceTree = "<group>"; };
 		AEFCCE1F166EBF7D00D5AA5A /* Karrabing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Karrabing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEFCCE23166EBF7D00D5AA5A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		AEFCCE25166EBF7D00D5AA5A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -35,6 +61,26 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		AE533FDF166EC06000B5BEA1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE533FE4166EC06000B5BEA1 /* UIKit.framework in Frameworks */,
+				AE533FE5166EC06000B5BEA1 /* Foundation.framework in Frameworks */,
+				AE533FE6166EC06000B5BEA1 /* CoreGraphics.framework in Frameworks */,
+				AE533FF1166EC06000B5BEA1 /* Cedar-iOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE533FFA166EC0A900B5BEA1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE533FFE166EC0A900B5BEA1 /* Foundation.framework in Frameworks */,
+				AE534003166EC0A900B5BEA1 /* Cedar.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AEFCCE1C166EBF7D00D5AA5A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -48,10 +94,51 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AE533FE7166EC06000B5BEA1 /* UISpecs */ = {
+			isa = PBXGroup;
+			children = (
+				AE53400B166EC3D100B5BEA1 /* AppDelegateSpec.mm */,
+				AE533FF0166EC06000B5BEA1 /* Cedar-iOS.framework */,
+				AE533FE8166EC06000B5BEA1 /* Supporting Files */,
+			);
+			path = UISpecs;
+			sourceTree = "<group>";
+		};
+		AE533FE8166EC06000B5BEA1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AE533FE9166EC06000B5BEA1 /* UISpecs-Info.plist */,
+				AE533FEA166EC06000B5BEA1 /* InfoPlist.strings */,
+				AE533FED166EC06000B5BEA1 /* main.m */,
+				AE533FEF166EC06000B5BEA1 /* UISpecs-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AE533FFF166EC0A900B5BEA1 /* Specs */ = {
+			isa = PBXGroup;
+			children = (
+				AE534002166EC0A900B5BEA1 /* Cedar.framework */,
+				AE534004166EC0A900B5BEA1 /* main.m */,
+				AE534000166EC0A900B5BEA1 /* Supporting Files */,
+			);
+			path = Specs;
+			sourceTree = "<group>";
+		};
+		AE534000166EC0A900B5BEA1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AE534001166EC0A900B5BEA1 /* Specs-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		AEFCCE14166EBF7D00D5AA5A = {
 			isa = PBXGroup;
 			children = (
 				AEFCCE29166EBF7D00D5AA5A /* Karrabing */,
+				AE533FE7166EC06000B5BEA1 /* UISpecs */,
+				AE533FFF166EC0A900B5BEA1 /* Specs */,
 				AEFCCE22166EBF7D00D5AA5A /* Frameworks */,
 				AEFCCE20166EBF7D00D5AA5A /* Products */,
 			);
@@ -61,6 +148,8 @@
 			isa = PBXGroup;
 			children = (
 				AEFCCE1F166EBF7D00D5AA5A /* Karrabing.app */,
+				AE533FE2166EC06000B5BEA1 /* UISpecs.app */,
+				AE533FFC166EC0A900B5BEA1 /* Specs */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -80,6 +169,8 @@
 			children = (
 				AEFCCE32166EBF7D00D5AA5A /* AppDelegate.h */,
 				AEFCCE33166EBF7D00D5AA5A /* AppDelegate.m */,
+				AE53400E166EC76C00B5BEA1 /* MyStoriesViewController.h */,
+				AE53400F166EC76C00B5BEA1 /* MyStoriesViewController.m */,
 				AEFCCE2A166EBF7D00D5AA5A /* Supporting Files */,
 			);
 			path = Karrabing;
@@ -102,6 +193,40 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		AE533FE1166EC06000B5BEA1 /* UISpecs */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE533FF6166EC06000B5BEA1 /* Build configuration list for PBXNativeTarget "UISpecs" */;
+			buildPhases = (
+				AE533FDE166EC06000B5BEA1 /* Sources */,
+				AE533FDF166EC06000B5BEA1 /* Frameworks */,
+				AE533FE0166EC06000B5BEA1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UISpecs;
+			productName = UISpecs;
+			productReference = AE533FE2166EC06000B5BEA1 /* UISpecs.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AE533FFB166EC0A900B5BEA1 /* Specs */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE534008166EC0A900B5BEA1 /* Build configuration list for PBXNativeTarget "Specs" */;
+			buildPhases = (
+				AE533FF8166EC0A900B5BEA1 /* ShellScript */,
+				AE533FF9166EC0A900B5BEA1 /* Sources */,
+				AE533FFA166EC0A900B5BEA1 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Specs;
+			productName = Specs;
+			productReference = AE533FFC166EC0A900B5BEA1 /* Specs */;
+			productType = "com.apple.product-type.tool";
+		};
 		AEFCCE1E166EBF7D00D5AA5A /* Karrabing */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = AEFCCE3D166EBF7D00D5AA5A /* Build configuration list for PBXNativeTarget "Karrabing" */;
@@ -140,11 +265,21 @@
 			projectRoot = "";
 			targets = (
 				AEFCCE1E166EBF7D00D5AA5A /* Karrabing */,
+				AE533FE1166EC06000B5BEA1 /* UISpecs */,
+				AE533FFB166EC0A900B5BEA1 /* Specs */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		AE533FE0166EC06000B5BEA1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE533FEC166EC06000B5BEA1 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AEFCCE1D166EBF7D00D5AA5A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -158,19 +293,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		AE533FF8166EC0A900B5BEA1 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cp -R \"${TARGET_NAME}\"/Frameworks/Cedar.framework \"${BUILT_PRODUCTS_DIR}\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		AE533FDE166EC06000B5BEA1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE533FEE166EC06000B5BEA1 /* main.m in Sources */,
+				AE53400C166EC3D100B5BEA1 /* AppDelegateSpec.mm in Sources */,
+				AE53400D166EC5ED00B5BEA1 /* AppDelegate.m in Sources */,
+				AE534011166EC76D00B5BEA1 /* MyStoriesViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE533FF9166EC0A900B5BEA1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE534005166EC0A900B5BEA1 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AEFCCE1B166EBF7D00D5AA5A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				AEFCCE30166EBF7D00D5AA5A /* main.m in Sources */,
 				AEFCCE34166EBF7D00D5AA5A /* AppDelegate.m in Sources */,
+				AE534010166EC76D00B5BEA1 /* MyStoriesViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		AE533FEA166EC06000B5BEA1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AE533FEB166EC06000B5BEA1 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 		AEFCCE2C166EBF7D00D5AA5A /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -182,6 +361,86 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		AE533FF4166EC06000B5BEA1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/UISpecs/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "UISpecs/UISpecs-Prefix.pch";
+				INFOPLIST_FILE = "UISpecs/UISpecs-Info.plist";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+					"-lstdc++",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		AE533FF5166EC06000B5BEA1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/UISpecs/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "UISpecs/UISpecs-Prefix.pch";
+				INFOPLIST_FILE = "UISpecs/UISpecs-Info.plist";
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+					"-lstdc++",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		AE534009166EC0A900B5BEA1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Specs/Frameworks\"",
+				);
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Specs/Specs-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		AE53400A166EC0A900B5BEA1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Specs/Frameworks\"",
+				);
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Specs/Specs-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
 		AEFCCE3B166EBF7D00D5AA5A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -259,6 +518,22 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		AE533FF6166EC06000B5BEA1 /* Build configuration list for PBXNativeTarget "UISpecs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE533FF4166EC06000B5BEA1 /* Debug */,
+				AE533FF5166EC06000B5BEA1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		AE534008166EC0A900B5BEA1 /* Build configuration list for PBXNativeTarget "Specs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE534009166EC0A900B5BEA1 /* Debug */,
+				AE53400A166EC0A900B5BEA1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		AEFCCE19166EBF7D00D5AA5A /* Build configuration list for PBXProject "Karrabing" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -275,6 +550,7 @@
 				AEFCCE3F166EBF7D00D5AA5A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
