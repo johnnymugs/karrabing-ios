@@ -34,7 +34,7 @@ describe(@"MyStoriesViewController", ^{
                 [controller.cameraButton.target performSelector:controller.cameraButton.action withObject:controller.cameraButton];
             });
 
-            xit(@"should present a UIImagePickerController", ^{
+            it(@"should present a UIImagePickerController", ^{
                 controller.presentedViewController should be_instance_of([UIImagePickerController class]);
             });
         });

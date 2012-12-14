@@ -21,6 +21,8 @@
 		AE534010166EC76D00B5BEA1 /* MyStoriesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE53400F166EC76C00B5BEA1 /* MyStoriesViewController.m */; };
 		AE534011166EC76D00B5BEA1 /* MyStoriesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE53400F166EC76C00B5BEA1 /* MyStoriesViewController.m */; };
 		AE534018166ED31400B5BEA1 /* MyStoriesViewControllerSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = AE534017166ED31400B5BEA1 /* MyStoriesViewControllerSpec.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		AE57207C167AB4DF00FD926C /* libPivotalSpecHelperKit-StaticLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AE572077167AB4AB00FD926C /* libPivotalSpecHelperKit-StaticLib.a */; };
+		AEA95A9E167AB5ED00A7C829 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEA95A9D167AB5ED00A7C829 /* CoreLocation.framework */; };
 		AEFCCE24166EBF7D00D5AA5A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEFCCE23166EBF7D00D5AA5A /* UIKit.framework */; };
 		AEFCCE26166EBF7D00D5AA5A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEFCCE25166EBF7D00D5AA5A /* Foundation.framework */; };
 		AEFCCE28166EBF7D00D5AA5A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEFCCE27166EBF7D00D5AA5A /* CoreGraphics.framework */; };
@@ -31,6 +33,65 @@
 		AEFCCE38166EBF7D00D5AA5A /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AEFCCE37166EBF7D00D5AA5A /* Default@2x.png */; };
 		AEFCCE3A166EBF7D00D5AA5A /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AEFCCE39166EBF7D00D5AA5A /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AE57206E167AB4AB00FD926C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE57205E167AB4AB00FD926C /* PivotalCoreKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = AEF15AC511C97E8B005B4F92;
+			remoteInfo = PivotalCoreKit;
+		};
+		AE572070167AB4AB00FD926C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE57205E167AB4AB00FD926C /* PivotalCoreKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = AEF15AE011C97F15005B4F92;
+			remoteInfo = PivotalSpecHelperKit;
+		};
+		AE572072167AB4AB00FD926C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE57205E167AB4AB00FD926C /* PivotalCoreKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = AECC4BBA11C6E2280027AB1B;
+			remoteInfo = Spec;
+		};
+		AE572074167AB4AB00FD926C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE57205E167AB4AB00FD926C /* PivotalCoreKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = AE138E7011E542BF004E825D;
+			remoteInfo = "PivotalCoreKit-StaticLib";
+		};
+		AE572076167AB4AB00FD926C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE57205E167AB4AB00FD926C /* PivotalCoreKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = AE138F4611E548B5004E825D;
+			remoteInfo = "PivotalSpecHelperKit-StaticLib";
+		};
+		AE572078167AB4AB00FD926C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE57205E167AB4AB00FD926C /* PivotalCoreKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = AEE06699152B6AFA009289FE;
+			remoteInfo = "PivotalUICoreKit-StaticLib";
+		};
+		AE57207A167AB4AB00FD926C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE57205E167AB4AB00FD926C /* PivotalCoreKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6696DFC21266DE6C00111E23;
+			remoteInfo = UISpec;
+		};
+		AEA95A9B167AB52600A7C829 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE57205E167AB4AB00FD926C /* PivotalCoreKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = AE138F4511E548B5004E825D;
+			remoteInfo = "PivotalSpecHelperKit-StaticLib";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		AE533FE2166EC06000B5BEA1 /* UISpecs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UISpecs.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,6 +108,8 @@
 		AE53400E166EC76C00B5BEA1 /* MyStoriesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyStoriesViewController.h; sourceTree = "<group>"; };
 		AE53400F166EC76C00B5BEA1 /* MyStoriesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyStoriesViewController.m; sourceTree = "<group>"; };
 		AE534017166ED31400B5BEA1 /* MyStoriesViewControllerSpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MyStoriesViewControllerSpec.mm; sourceTree = "<group>"; };
+		AE57205E167AB4AB00FD926C /* PivotalCoreKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PivotalCoreKit.xcodeproj; path = PivotalCoreKit/PivotalCoreKit.xcodeproj; sourceTree = "<group>"; };
+		AEA95A9D167AB5ED00A7C829 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		AEFCCE1F166EBF7D00D5AA5A /* Karrabing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Karrabing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEFCCE23166EBF7D00D5AA5A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		AEFCCE25166EBF7D00D5AA5A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -67,6 +130,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AEA95A9E167AB5ED00A7C829 /* CoreLocation.framework in Frameworks */,
+				AE57207C167AB4DF00FD926C /* libPivotalSpecHelperKit-StaticLib.a in Frameworks */,
 				AE533FE4166EC06000B5BEA1 /* UIKit.framework in Frameworks */,
 				AE533FE5166EC06000B5BEA1 /* Foundation.framework in Frameworks */,
 				AE533FE6166EC06000B5BEA1 /* CoreGraphics.framework in Frameworks */,
@@ -136,9 +201,32 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		AE57205C167AB47700FD926C /* Externals */ = {
+			isa = PBXGroup;
+			children = (
+				AE57205E167AB4AB00FD926C /* PivotalCoreKit.xcodeproj */,
+			);
+			path = Externals;
+			sourceTree = "<group>";
+		};
+		AE57205F167AB4AB00FD926C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AE57206F167AB4AB00FD926C /* PivotalCoreKit.framework */,
+				AE572071167AB4AB00FD926C /* PivotalSpecHelperKit.framework */,
+				AE572073167AB4AB00FD926C /* Spec */,
+				AE572075167AB4AB00FD926C /* libPivotalCoreKit-StaticLib.a */,
+				AE572077167AB4AB00FD926C /* libPivotalSpecHelperKit-StaticLib.a */,
+				AE572079167AB4AB00FD926C /* libPivotalUICoreKit-StaticLib.a */,
+				AE57207B167AB4AB00FD926C /* UISpec.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		AEFCCE14166EBF7D00D5AA5A = {
 			isa = PBXGroup;
 			children = (
+				AE57205C167AB47700FD926C /* Externals */,
 				AEFCCE29166EBF7D00D5AA5A /* Karrabing */,
 				AE533FE7166EC06000B5BEA1 /* UISpecs */,
 				AE533FFF166EC0A900B5BEA1 /* Specs */,
@@ -160,6 +248,7 @@
 		AEFCCE22166EBF7D00D5AA5A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AEA95A9D167AB5ED00A7C829 /* CoreLocation.framework */,
 				AEFCCE23166EBF7D00D5AA5A /* UIKit.framework */,
 				AEFCCE25166EBF7D00D5AA5A /* Foundation.framework */,
 				AEFCCE27166EBF7D00D5AA5A /* CoreGraphics.framework */,
@@ -207,6 +296,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				AEA95A9C167AB52600A7C829 /* PBXTargetDependency */,
 			);
 			name = UISpecs;
 			productName = UISpecs;
@@ -265,6 +355,12 @@
 			mainGroup = AEFCCE14166EBF7D00D5AA5A;
 			productRefGroup = AEFCCE20166EBF7D00D5AA5A /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = AE57205F167AB4AB00FD926C /* Products */;
+					ProjectRef = AE57205E167AB4AB00FD926C /* PivotalCoreKit.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				AEFCCE1E166EBF7D00D5AA5A /* Karrabing */,
@@ -273,6 +369,58 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		AE57206F167AB4AB00FD926C /* PivotalCoreKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = PivotalCoreKit.framework;
+			remoteRef = AE57206E167AB4AB00FD926C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		AE572071167AB4AB00FD926C /* PivotalSpecHelperKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = PivotalSpecHelperKit.framework;
+			remoteRef = AE572070167AB4AB00FD926C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		AE572073167AB4AB00FD926C /* Spec */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = Spec;
+			remoteRef = AE572072167AB4AB00FD926C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		AE572075167AB4AB00FD926C /* libPivotalCoreKit-StaticLib.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libPivotalCoreKit-StaticLib.a";
+			remoteRef = AE572074167AB4AB00FD926C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		AE572077167AB4AB00FD926C /* libPivotalSpecHelperKit-StaticLib.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libPivotalSpecHelperKit-StaticLib.a";
+			remoteRef = AE572076167AB4AB00FD926C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		AE572079167AB4AB00FD926C /* libPivotalUICoreKit-StaticLib.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libPivotalUICoreKit-StaticLib.a";
+			remoteRef = AE572078167AB4AB00FD926C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		AE57207B167AB4AB00FD926C /* UISpec.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = UISpec.app;
+			remoteRef = AE57207A167AB4AB00FD926C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		AE533FE0166EC06000B5BEA1 /* Resources */ = {
@@ -345,6 +493,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		AEA95A9C167AB52600A7C829 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "PivotalSpecHelperKit-StaticLib";
+			targetProxy = AEA95A9B167AB52600A7C829 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		AE533FEA166EC06000B5BEA1 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
@@ -375,6 +531,7 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "UISpecs/UISpecs-Prefix.pch";
+				HEADER_SEARCH_PATHS = $SRCROOT/Externals/PivotalCoreKit/SpecHelperLib/;
 				INFOPLIST_FILE = "UISpecs/UISpecs-Info.plist";
 				OTHER_LDFLAGS = (
 					"-ObjC",
@@ -396,6 +553,7 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "UISpecs/UISpecs-Prefix.pch";
+				HEADER_SEARCH_PATHS = $SRCROOT/Externals/PivotalCoreKit/SpecHelperLib/;
 				INFOPLIST_FILE = "UISpecs/UISpecs-Info.plist";
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				OTHER_LDFLAGS = (
@@ -529,6 +687,7 @@
 				AE533FF5166EC06000B5BEA1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AE534008166EC0A900B5BEA1 /* Build configuration list for PBXNativeTarget "Specs" */ = {
 			isa = XCConfigurationList;
@@ -537,6 +696,7 @@
 				AE53400A166EC0A900B5BEA1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AEFCCE19166EBF7D00D5AA5A /* Build configuration list for PBXProject "Karrabing" */ = {
 			isa = XCConfigurationList;
