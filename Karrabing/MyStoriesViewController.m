@@ -1,7 +1,7 @@
 #import "MyStoriesViewController.h"
 
 @interface MyStoriesViewController ()
-
+@property (strong, nonatomic, readwrite) UIBarButtonItem *cameraButton;
 @end
 
 @implementation MyStoriesViewController
@@ -15,9 +15,22 @@
     return self;
 }
 
+- (void)loadView {
+    [super loadView];
+    self.cameraButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCamera
+                                                                      target:self
+                                                                      action:@selector(cameraButtonWasTapped:)];
+    self.navigationItem.rightBarButtonItem = self.cameraButton;
+}
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
     [self doesNotRecognizeSelector:_cmd];
     return nil;
+}
+
+#pragma mark - private
+
+- (void)cameraButtonWasTapped:(id)sender {
 }
 
 @end
