@@ -31,7 +31,9 @@
 #pragma mark - private
 
 - (void)cameraButtonWasTapped:(id)sender {
-    [self presentViewController:[[UIImagePickerController alloc] init] animated:YES completion:nil];
+    UIImagePickerController *picker = [[UIImagePickerController alloc] init];
+    picker.sourceType = UIImagePickerControllerSourceTypeCamera;
+    [self presentViewController:picker animated:YES completion:nil];
 }
 
 @end
