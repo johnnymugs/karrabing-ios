@@ -32,6 +32,7 @@
 
 - (void)cameraButtonWasTapped:(id)sender {
     UIImagePickerController *picker = [[UIImagePickerController alloc] init];
+    picker.delegate = self;
     picker.sourceType = UIImagePickerControllerSourceTypeCamera;
     [self presentViewController:picker animated:YES completion:nil];
 }

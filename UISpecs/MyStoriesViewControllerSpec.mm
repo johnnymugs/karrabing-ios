@@ -40,6 +40,10 @@ describe(@"MyStoriesViewController", ^{
                 controller.presentedViewController should be_instance_of([UIImagePickerController class]);
             });
 
+            it(@"should have the UIImagePickerController delegate to the controller", ^{
+                [((UIImagePickerController *)controller.presentedViewController) delegate] should be_same_instance_as(controller);
+            });
+
             it(@"should set the source type of the UIImagePickerController to camera", ^{
                 [(id)(controller.presentedViewController) sourceType] should equal(UIImagePickerControllerSourceTypeCamera);
             });
