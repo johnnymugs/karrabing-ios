@@ -34,13 +34,16 @@ describe(@"MyStoriesViewController", ^{
                 [controller.cameraButton.target performSelector:controller.cameraButton.action withObject:controller.cameraButton];
             });
 
-            xit(@"should present a UIImagePickerController", ^{ //camera not supported in simulator
+#if TARGET_IPHONE_SIMULATOR //camera not supported in simulator
+#elif TARGET_OS_IPHONE
+            it(@"should present a UIImagePickerController", ^{
                 controller.presentedViewController should be_instance_of([UIImagePickerController class]);
             });
 
-            xit(@"should set the source type of the UIImagePickerController to camera", ^{ //camera not supported in simulator
+            it(@"should set the source type of the UIImagePickerController to camera", ^{
                 [(id)(controller.presentedViewController) sourceType] should equal(UIImagePickerControllerSourceTypeCamera);
             });
+#endif
         });
     });
 
