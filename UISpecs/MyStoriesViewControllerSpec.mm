@@ -54,6 +54,21 @@ describe(@"MyStoriesViewController", ^{
     it(@"title should be 'My Stories'", ^{
         controller.title should equal(@"My Stories");
     });
+
+    describe(@"UIImagePickerControllerDelegate protocol", ^{
+        describe(@"imagePickerController:didFinishPickingMediaWithInfo:", ^{
+            beforeEach(^{
+                [controller presentViewController:[[[UIViewController alloc] init] autorelease]
+                                         animated:NO
+                                       completion:nil];
+                [controller imagePickerController:nil didFinishPickingMediaWithInfo:@{}];
+            });
+
+            it(@"should dismiss presented view controller", ^{
+                controller.presentedViewController should be_nil;
+            });
+        });
+    });
 });
 
 SPEC_END

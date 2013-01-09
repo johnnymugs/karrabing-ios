@@ -28,6 +28,12 @@
     return nil;
 }
 
+#pragma mark - UIImagePickerControllerDelegate protocol
+
+- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
 #pragma mark - private
 
 - (void)cameraButtonWasTapped:(id)sender {
