@@ -1,4 +1,5 @@
 #import "MyStoriesViewController.h"
+#import "StoryViewController.h"
 
 using namespace Cedar::Matchers;
 using namespace Cedar::Doubles;
@@ -9,7 +10,8 @@ describe(@"MyStoriesViewController", ^{
     __block MyStoriesViewController *controller;
 
     beforeEach(^{
-        controller = [[MyStoriesViewController alloc] init];
+        controller = [[[MyStoriesViewController alloc] init] autorelease];
+        [[[UINavigationController alloc] initWithRootViewController:controller] autorelease];
     });
 
     context(@"when the view has been loaded", ^{
@@ -62,6 +64,10 @@ describe(@"MyStoriesViewController", ^{
                                          animated:NO
                                        completion:nil];
                 [controller imagePickerController:nil didFinishPickingMediaWithInfo:@{}];
+            });
+
+            it(@"should push a StoryViewController onto the navigation stack", ^{
+                controller.navigationController.topViewController should be_instance_of([StoryViewController class]);
             });
 
             it(@"should dismiss presented view controller", ^{

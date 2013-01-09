@@ -22,6 +22,8 @@
 		AE534011166EC76D00B5BEA1 /* MyStoriesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE53400F166EC76C00B5BEA1 /* MyStoriesViewController.m */; };
 		AE534018166ED31400B5BEA1 /* MyStoriesViewControllerSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = AE534017166ED31400B5BEA1 /* MyStoriesViewControllerSpec.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		AE57207C167AB4DF00FD926C /* libPivotalSpecHelperKit-StaticLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AE572077167AB4AB00FD926C /* libPivotalSpecHelperKit-StaticLib.a */; };
+		AEA06871169CEF3000E70424 /* StoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEA06870169CEF3000E70424 /* StoryViewController.m */; };
+		AEA06872169CEF3000E70424 /* StoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEA06870169CEF3000E70424 /* StoryViewController.m */; };
 		AEA95A9E167AB5ED00A7C829 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEA95A9D167AB5ED00A7C829 /* CoreLocation.framework */; };
 		AEFCCE24166EBF7D00D5AA5A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEFCCE23166EBF7D00D5AA5A /* UIKit.framework */; };
 		AEFCCE26166EBF7D00D5AA5A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEFCCE25166EBF7D00D5AA5A /* Foundation.framework */; };
@@ -109,6 +111,8 @@
 		AE53400F166EC76C00B5BEA1 /* MyStoriesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyStoriesViewController.m; sourceTree = "<group>"; };
 		AE534017166ED31400B5BEA1 /* MyStoriesViewControllerSpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MyStoriesViewControllerSpec.mm; sourceTree = "<group>"; };
 		AE57205E167AB4AB00FD926C /* PivotalCoreKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PivotalCoreKit.xcodeproj; path = PivotalCoreKit/PivotalCoreKit.xcodeproj; sourceTree = "<group>"; };
+		AEA0686F169CEF3000E70424 /* StoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryViewController.h; sourceTree = "<group>"; };
+		AEA06870169CEF3000E70424 /* StoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryViewController.m; sourceTree = "<group>"; };
 		AEA95A9D167AB5ED00A7C829 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		AEFCCE1F166EBF7D00D5AA5A /* Karrabing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Karrabing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEFCCE23166EBF7D00D5AA5A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -263,6 +267,8 @@
 				AEFCCE33166EBF7D00D5AA5A /* AppDelegate.m */,
 				AE53400E166EC76C00B5BEA1 /* MyStoriesViewController.h */,
 				AE53400F166EC76C00B5BEA1 /* MyStoriesViewController.m */,
+				AEA0686F169CEF3000E70424 /* StoryViewController.h */,
+				AEA06870169CEF3000E70424 /* StoryViewController.m */,
 				AEFCCE2A166EBF7D00D5AA5A /* Supporting Files */,
 			);
 			path = Karrabing;
@@ -470,6 +476,7 @@
 				AE53400D166EC5ED00B5BEA1 /* AppDelegate.m in Sources */,
 				AE534011166EC76D00B5BEA1 /* MyStoriesViewController.m in Sources */,
 				AE534018166ED31400B5BEA1 /* MyStoriesViewControllerSpec.mm in Sources */,
+				AEA06872169CEF3000E70424 /* StoryViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -488,6 +495,7 @@
 				AEFCCE30166EBF7D00D5AA5A /* main.m in Sources */,
 				AEFCCE34166EBF7D00D5AA5A /* AppDelegate.m in Sources */,
 				AE534010166EC76D00B5BEA1 /* MyStoriesViewController.m in Sources */,
+				AEA06871169CEF3000E70424 /* StoryViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
