@@ -45,6 +45,10 @@ describe(@"StoryViewController", ^{
                 it(@"should return a TextFieldCell", ^{
                     cell should be_instance_of([TextFieldCell class]);
                 });
+
+                it(@"should set the placeholder text on the TextFieldCell to 'Title'", ^{
+                    ((TextFieldCell *)cell).textField.placeholder should equal(@"Title");
+                });
             });
 
             context(@"for the first cell in the second section (story row)", ^{

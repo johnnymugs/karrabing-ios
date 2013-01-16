@@ -40,6 +40,7 @@ enum {
 
         if (!textFieldCell) {
             textFieldCell = [[TextFieldCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"titleCell"];
+            textFieldCell.textField.placeholder = @"Title";
         }
 
         return textFieldCell;
