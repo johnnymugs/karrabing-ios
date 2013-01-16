@@ -10,6 +10,7 @@
 		AE3C953C16A626C1004FE262 /* StoryViewControllerSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = AE3C953B16A626C1004FE262 /* StoryViewControllerSpec.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		AE3C953F16A62B4D004FE262 /* TextFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE3C953E16A62B4D004FE262 /* TextFieldCell.m */; };
 		AE3C954016A62B4D004FE262 /* TextFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE3C953E16A62B4D004FE262 /* TextFieldCell.m */; };
+		AE3C954216A62E63004FE262 /* TextFieldCellSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = AE3C954116A62E63004FE262 /* TextFieldCellSpec.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		AE533FE4166EC06000B5BEA1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEFCCE23166EBF7D00D5AA5A /* UIKit.framework */; };
 		AE533FE5166EC06000B5BEA1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEFCCE25166EBF7D00D5AA5A /* Foundation.framework */; };
 		AE533FE6166EC06000B5BEA1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEFCCE27166EBF7D00D5AA5A /* CoreGraphics.framework */; };
@@ -102,6 +103,7 @@
 		AE3C953B16A626C1004FE262 /* StoryViewControllerSpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = StoryViewControllerSpec.mm; sourceTree = "<group>"; };
 		AE3C953D16A62B4D004FE262 /* TextFieldCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextFieldCell.h; sourceTree = "<group>"; };
 		AE3C953E16A62B4D004FE262 /* TextFieldCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextFieldCell.m; sourceTree = "<group>"; };
+		AE3C954116A62E63004FE262 /* TextFieldCellSpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = TextFieldCellSpec.mm; sourceTree = "<group>"; };
 		AE533FE2166EC06000B5BEA1 /* UISpecs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UISpecs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE533FE9166EC06000B5BEA1 /* UISpecs-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UISpecs-Info.plist"; sourceTree = "<group>"; };
 		AE533FEB166EC06000B5BEA1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -177,6 +179,7 @@
 				AE53400B166EC3D100B5BEA1 /* AppDelegateSpec.mm */,
 				AE534017166ED31400B5BEA1 /* MyStoriesViewControllerSpec.mm */,
 				AE3C953B16A626C1004FE262 /* StoryViewControllerSpec.mm */,
+				AE3C954116A62E63004FE262 /* TextFieldCellSpec.mm */,
 				AE533FF0166EC06000B5BEA1 /* Cedar-iOS.framework */,
 				AE533FE8166EC06000B5BEA1 /* Supporting Files */,
 			);
@@ -488,6 +491,7 @@
 				AEA06872169CEF3000E70424 /* StoryViewController.m in Sources */,
 				AE3C953C16A626C1004FE262 /* StoryViewControllerSpec.mm in Sources */,
 				AE3C954016A62B4D004FE262 /* TextFieldCell.m in Sources */,
+				AE3C954216A62E63004FE262 /* TextFieldCellSpec.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

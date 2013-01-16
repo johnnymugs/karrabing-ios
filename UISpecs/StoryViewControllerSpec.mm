@@ -51,7 +51,6 @@ describe(@"StoryViewController", ^{
                 beforeEach(^{
                     cell = [controller tableView:controller.tableView cellForRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:1]];
                 });
-
             });
         });
     });

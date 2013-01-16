@@ -2,4 +2,6 @@
 
 @interface TextFieldCell : UITableViewCell
 
+@property (nonatomic, weak, readonly) UITextField *textField;
+
 @end
