@@ -1,8 +1,14 @@
 #import "StoryViewController.h"
+#import "TextFieldCell.h"
 
 @interface StoryViewController ()
 
 @end
+
+enum {
+    TitleSection,
+    StorySection
+};
 
 @implementation StoryViewController
 
@@ -11,29 +17,39 @@
 - (id)init {
     self = [super initWithStyle:UITableViewStyleGrouped];
     if (self) {
+
     }
     return self;
 }
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
-{
-    return 0;
+- (void)loadView {
+    [super loadView];
 }
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-{
-    return 0;
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return 2;
 }
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return 1;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    if (indexPath.section == TitleSection) {
+        TextFieldCell *textFieldCell = [tableView dequeueReusableCellWithIdentifier:@"titleCell"];
+
+        if (!textFieldCell) {
+            textFieldCell = [[TextFieldCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"titleCell"];
+        }
+
+        return textFieldCell;
+    }
     return nil;
 }
 
 #pragma mark - Table view delegate
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
 }
 
 @end
