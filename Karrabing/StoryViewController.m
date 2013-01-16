@@ -8,6 +8,13 @@
 
 #pragma mark - Table view data source
 
+- (id)init {
+    self = [super initWithStyle:UITableViewStyleGrouped];
+    if (self) {
+    }
+    return self;
+}
+
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
     return 0;
