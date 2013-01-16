@@ -1,5 +1,6 @@
 #import "StoryViewController.h"
 #import "TextFieldCell.h"
+#import "TextViewCell.h"
 
 using namespace Cedar::Matchers;
 using namespace Cedar::Doubles;
@@ -54,6 +55,10 @@ describe(@"StoryViewController", ^{
             context(@"for the first cell in the second section (story row)", ^{
                 beforeEach(^{
                     cell = [controller tableView:controller.tableView cellForRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:1]];
+                });
+
+                it(@"should return a TextViewCell", ^{
+                    cell should be_instance_of([TextViewCell class]);
                 });
             });
         });

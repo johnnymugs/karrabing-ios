@@ -1,5 +1,6 @@
 #import "StoryViewController.h"
 #import "TextFieldCell.h"
+#import "TextViewCell.h"
 
 @interface StoryViewController ()
 
@@ -44,6 +45,14 @@ enum {
         }
 
         return textFieldCell;
+    } else if (indexPath.section == StorySection) {
+        TextViewCell *textViewCell = [tableView dequeueReusableCellWithIdentifier:@"storyCell"];
+
+        if (!textViewCell) {
+            textViewCell = [[TextViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"storyCell"];
+        }
+
+        return textViewCell;
     }
     return nil;
 }
