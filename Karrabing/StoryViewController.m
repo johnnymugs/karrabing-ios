@@ -4,6 +4,8 @@
 
 @interface StoryViewController ()
 
+@property (nonatomic, strong, readwrite) Story *story;
+
 @end
 
 enum {
@@ -18,7 +20,7 @@ enum {
 - (id)initWithStory:(Story *)story {
     self = [super initWithStyle:UITableViewStyleGrouped];
     if (self) {
-
+        self.story = story;
     }
     return self;
 }

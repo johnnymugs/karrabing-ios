@@ -1,5 +1,6 @@
 #import "MyStoriesViewController.h"
 #import "StoryViewController.h"
+#import "Story.h"
 
 @interface MyStoriesViewController ()
 @property (strong, nonatomic, readwrite) UIBarButtonItem *cameraButton;
@@ -32,7 +33,7 @@
 #pragma mark - UIImagePickerControllerDelegate protocol
 
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {
-    StoryViewController *storyViewController = [[StoryViewController alloc] init];
+    StoryViewController *storyViewController = [[StoryViewController alloc] initWithStory:[[Story alloc] init]];
     [self.navigationController pushViewController:storyViewController animated:NO];
     [self dismissViewControllerAnimated:YES completion:nil];
 }

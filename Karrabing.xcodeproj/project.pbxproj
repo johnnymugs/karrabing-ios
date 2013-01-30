@@ -31,6 +31,7 @@
 		AE534011166EC76D00B5BEA1 /* MyStoriesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE53400F166EC76C00B5BEA1 /* MyStoriesViewController.m */; };
 		AE534018166ED31400B5BEA1 /* MyStoriesViewControllerSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = AE534017166ED31400B5BEA1 /* MyStoriesViewControllerSpec.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		AE57207C167AB4DF00FD926C /* libPivotalSpecHelperKit-StaticLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AE572077167AB4AB00FD926C /* libPivotalSpecHelperKit-StaticLib.a */; };
+		AE70ACFF16B897EA0079555D /* StoryViewController+Spec.m in Sources */ = {isa = PBXBuildFile; fileRef = AE70ACFE16B897EA0079555D /* StoryViewController+Spec.m */; };
 		AEA06871169CEF3000E70424 /* StoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEA06870169CEF3000E70424 /* StoryViewController.m */; };
 		AEA06872169CEF3000E70424 /* StoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEA06870169CEF3000E70424 /* StoryViewController.m */; };
 		AEA95A9E167AB5ED00A7C829 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEA95A9D167AB5ED00A7C829 /* CoreLocation.framework */; };
@@ -128,6 +129,8 @@
 		AE53400F166EC76C00B5BEA1 /* MyStoriesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyStoriesViewController.m; sourceTree = "<group>"; };
 		AE534017166ED31400B5BEA1 /* MyStoriesViewControllerSpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MyStoriesViewControllerSpec.mm; sourceTree = "<group>"; };
 		AE57205E167AB4AB00FD926C /* PivotalCoreKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PivotalCoreKit.xcodeproj; path = PivotalCoreKit/PivotalCoreKit.xcodeproj; sourceTree = "<group>"; };
+		AE70ACFD16B897EA0079555D /* StoryViewController+Spec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "StoryViewController+Spec.h"; sourceTree = "<group>"; };
+		AE70ACFE16B897EA0079555D /* StoryViewController+Spec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "StoryViewController+Spec.m"; sourceTree = "<group>"; };
 		AEA0686F169CEF3000E70424 /* StoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryViewController.h; sourceTree = "<group>"; };
 		AEA06870169CEF3000E70424 /* StoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryViewController.m; sourceTree = "<group>"; };
 		AEA95A9D167AB5ED00A7C829 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -194,6 +197,7 @@
 		AE533FE7166EC06000B5BEA1 /* UISpecs */ = {
 			isa = PBXGroup;
 			children = (
+				AE70ACFC16B897A00079555D /* Extensions */,
 				AE53400B166EC3D100B5BEA1 /* AppDelegateSpec.mm */,
 				AE534017166ED31400B5BEA1 /* MyStoriesViewControllerSpec.mm */,
 				AE3C953B16A626C1004FE262 /* StoryViewControllerSpec.mm */,
@@ -253,6 +257,15 @@
 				AE57207B167AB4AB00FD926C /* UISpec.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		AE70ACFC16B897A00079555D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				AE70ACFD16B897EA0079555D /* StoryViewController+Spec.h */,
+				AE70ACFE16B897EA0079555D /* StoryViewController+Spec.m */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		AEFCCE14166EBF7D00D5AA5A = {
@@ -515,6 +528,7 @@
 				AE3C954216A62E63004FE262 /* TextFieldCellSpec.mm in Sources */,
 				AE3C954616A634A0004FE262 /* TextViewCell.m in Sources */,
 				AE3C957316A636FA004FE262 /* Story.m in Sources */,
+				AE70ACFF16B897EA0079555D /* StoryViewController+Spec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

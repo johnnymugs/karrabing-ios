@@ -1,5 +1,5 @@
 #import "MyStoriesViewController.h"
-#import "StoryViewController.h"
+#import "StoryViewController+Spec.h"
 
 using namespace Cedar::Matchers;
 using namespace Cedar::Doubles;
@@ -68,6 +68,10 @@ describe(@"MyStoriesViewController", ^{
 
             it(@"should push a StoryViewController onto the navigation stack", ^{
                 controller.navigationController.topViewController should be_instance_of([StoryViewController class]);
+            });
+
+            it(@"should pass a new story", ^{
+                ((StoryViewController *)controller.navigationController.topViewController).story should_not be_nil;
             });
 
             it(@"should dismiss presented view controller", ^{
