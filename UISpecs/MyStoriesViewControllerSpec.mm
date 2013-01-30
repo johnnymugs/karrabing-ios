@@ -1,8 +1,16 @@
 #import "MyStoriesViewController.h"
 #import "StoryViewController+Spec.h"
+#import "Story.h"
 
 using namespace Cedar::Matchers;
 using namespace Cedar::Doubles;
+
+UIImage *createBlankImage() {
+    UIGraphicsBeginImageContextWithOptions(CGSizeMake(100, 100), NO, 0.0);
+    UIImage *blank = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return blank;
+}
 
 SPEC_BEGIN(MyStoriesViewControllerSpec)
 
@@ -59,11 +67,16 @@ describe(@"MyStoriesViewController", ^{
 
     describe(@"UIImagePickerControllerDelegate protocol", ^{
         describe(@"imagePickerController:didFinishPickingMediaWithInfo:", ^{
+            __block UIImage *blankImage;
+
             beforeEach(^{
+                blankImage = createBlankImage();
                 [controller presentViewController:[[[UIViewController alloc] init] autorelease]
                                          animated:NO
                                        completion:nil];
-                [controller imagePickerController:nil didFinishPickingMediaWithInfo:@{}];
+                [controller imagePickerController:nil didFinishPickingMediaWithInfo:@{
+                    UIImagePickerControllerOriginalImage: blankImage
+                 }];
             });
 
             it(@"should push a StoryViewController onto the navigation stack", ^{
@@ -72,6 +85,10 @@ describe(@"MyStoriesViewController", ^{
 
             it(@"should pass a new story", ^{
                 ((StoryViewController *)controller.navigationController.topViewController).story should_not be_nil;
+            });
+
+            it(@"should set the JPEG representation of the captured image on the story", ^{
+                ((StoryViewController *)controller.navigationController.topViewController).story.imageJPEGData should equal(UIImageJPEGRepresentation(blankImage, 0.8f));
             });
 
             it(@"should dismiss presented view controller", ^{

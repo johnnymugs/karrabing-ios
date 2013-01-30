@@ -2,6 +2,8 @@
 #import "StoryViewController.h"
 #import "Story.h"
 
+static const CGFloat kImageCompressionQuality = 0.8f;
+
 @interface MyStoriesViewController ()
 @property (strong, nonatomic, readwrite) UIBarButtonItem *cameraButton;
 @end
@@ -33,7 +35,9 @@
 #pragma mark - UIImagePickerControllerDelegate protocol
 
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {
-    StoryViewController *storyViewController = [[StoryViewController alloc] initWithStory:[[Story alloc] init]];
+    Story *story = [[Story alloc] init];
+    story.imageJPEGData = UIImageJPEGRepresentation([info objectForKey:UIImagePickerControllerOriginalImage], kImageCompressionQuality);
+    StoryViewController *storyViewController = [[StoryViewController alloc] initWithStory:story];
     [self.navigationController pushViewController:storyViewController animated:NO];
     [self dismissViewControllerAnimated:YES completion:nil];
 }
