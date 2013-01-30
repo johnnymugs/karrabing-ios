@@ -13,6 +13,9 @@
 		AE3C954216A62E63004FE262 /* TextFieldCellSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = AE3C954116A62E63004FE262 /* TextFieldCellSpec.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		AE3C954516A634A0004FE262 /* TextViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE3C954416A634A0004FE262 /* TextViewCell.m */; };
 		AE3C954616A634A0004FE262 /* TextViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE3C954416A634A0004FE262 /* TextViewCell.m */; };
+		AE3C957216A636FA004FE262 /* Story.m in Sources */ = {isa = PBXBuildFile; fileRef = AE3C957116A636FA004FE262 /* Story.m */; };
+		AE3C957316A636FA004FE262 /* Story.m in Sources */ = {isa = PBXBuildFile; fileRef = AE3C957116A636FA004FE262 /* Story.m */; };
+		AE3C957416A636FA004FE262 /* Story.m in Sources */ = {isa = PBXBuildFile; fileRef = AE3C957116A636FA004FE262 /* Story.m */; };
 		AE533FE4166EC06000B5BEA1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEFCCE23166EBF7D00D5AA5A /* UIKit.framework */; };
 		AE533FE5166EC06000B5BEA1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEFCCE25166EBF7D00D5AA5A /* Foundation.framework */; };
 		AE533FE6166EC06000B5BEA1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEFCCE27166EBF7D00D5AA5A /* CoreGraphics.framework */; };
@@ -108,6 +111,8 @@
 		AE3C954116A62E63004FE262 /* TextFieldCellSpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = TextFieldCellSpec.mm; sourceTree = "<group>"; };
 		AE3C954316A634A0004FE262 /* TextViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextViewCell.h; sourceTree = "<group>"; };
 		AE3C954416A634A0004FE262 /* TextViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextViewCell.m; sourceTree = "<group>"; };
+		AE3C957016A636FA004FE262 /* Story.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Story.h; sourceTree = "<group>"; };
+		AE3C957116A636FA004FE262 /* Story.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Story.m; sourceTree = "<group>"; };
 		AE533FE2166EC06000B5BEA1 /* UISpecs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UISpecs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE533FE9166EC06000B5BEA1 /* UISpecs-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UISpecs-Info.plist"; sourceTree = "<group>"; };
 		AE533FEB166EC06000B5BEA1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -177,6 +182,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AE3C956F16A636C7004FE262 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AE3C957016A636FA004FE262 /* Story.h */,
+				AE3C957116A636FA004FE262 /* Story.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		AE533FE7166EC06000B5BEA1 /* UISpecs */ = {
 			isa = PBXGroup;
 			children = (
@@ -277,6 +291,7 @@
 		AEFCCE29166EBF7D00D5AA5A /* Karrabing */ = {
 			isa = PBXGroup;
 			children = (
+				AE3C956F16A636C7004FE262 /* Models */,
 				AEFCCE32166EBF7D00D5AA5A /* AppDelegate.h */,
 				AEFCCE33166EBF7D00D5AA5A /* AppDelegate.m */,
 				AE53400E166EC76C00B5BEA1 /* MyStoriesViewController.h */,
@@ -499,6 +514,7 @@
 				AE3C954016A62B4D004FE262 /* TextFieldCell.m in Sources */,
 				AE3C954216A62E63004FE262 /* TextFieldCellSpec.mm in Sources */,
 				AE3C954616A634A0004FE262 /* TextViewCell.m in Sources */,
+				AE3C957316A636FA004FE262 /* Story.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -507,6 +523,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AE534005166EC0A900B5BEA1 /* main.m in Sources */,
+				AE3C957416A636FA004FE262 /* Story.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -520,6 +537,7 @@
 				AEA06871169CEF3000E70424 /* StoryViewController.m in Sources */,
 				AE3C953F16A62B4D004FE262 /* TextFieldCell.m in Sources */,
 				AE3C954516A634A0004FE262 /* TextViewCell.m in Sources */,
+				AE3C957216A636FA004FE262 /* Story.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -15,7 +15,7 @@ enum {
 
 #pragma mark - Table view data source
 
-- (id)init {
+- (id)initWithStory:(Story *)story {
     self = [super initWithStyle:UITableViewStyleGrouped];
     if (self) {
 
