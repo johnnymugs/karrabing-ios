@@ -20,4 +20,9 @@
     return self;
 }
 
+- (void)layoutSubviews {
+    [super layoutSubviews];
+    self.textField.frame = CGRectInset(self.contentView.bounds, 5.f, 8.f);
+}
+
 @end
