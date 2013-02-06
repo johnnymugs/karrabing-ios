@@ -27,6 +27,16 @@ enum {
     return self;
 }
 
+- (id)init {
+    [self doesNotRecognizeSelector:_cmd];
+    return nil;
+}
+
+- (id)initWithStyle:(UITableViewStyle)style {
+    [self doesNotRecognizeSelector:_cmd];
+    return nil;
+}
+
 - (void)loadView {
     [super loadView];
 

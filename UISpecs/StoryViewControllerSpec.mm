@@ -1,6 +1,7 @@
 #import "StoryViewController.h"
 #import "TextFieldCell.h"
 #import "TextViewCell.h"
+#import "Story.h"
 
 using namespace Cedar::Matchers;
 using namespace Cedar::Doubles;
@@ -9,9 +10,11 @@ SPEC_BEGIN(StoryViewControllerSpec)
 
 describe(@"StoryViewController", ^{
     __block StoryViewController *controller;
+    __block Story *story;
 
     beforeEach(^{
-        controller = [[[StoryViewController alloc] init] autorelease];
+        story = [[[Story alloc] init] autorelease];
+        controller = [[[StoryViewController alloc] initWithStory:story] autorelease];
         controller.view should_not be_nil;
     });
 
