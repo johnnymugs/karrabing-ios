@@ -18,6 +18,12 @@ describe(@"StoryViewController", ^{
         controller.view should_not be_nil;
     });
 
+    describe(@"saveButton", ^{
+        it(@"should exist", ^{
+            controller.saveButton should_not be_nil;
+        });
+    });
+
     describe(@"textFieldCell", ^{
         it(@"should exist", ^{
             controller.textFieldCell should_not be_nil;
@@ -31,6 +37,25 @@ describe(@"StoryViewController", ^{
     describe(@"textViewCell", ^{
         it(@"should exist", ^{
             controller.textViewCell should_not be_nil;
+        });
+    });
+
+    describe(@"navigationItem", ^{
+        describe(@"rightBarButtonItem", ^{
+            it(@"should be the save button", ^{
+                controller.navigationItem.rightBarButtonItem should be_same_instance_as(controller.saveButton);
+            });
+        });
+    });
+
+    describe(@"on save button is tapped", ^{
+        beforeEach(^{
+            controller.textFieldCell.textField.text = @"A rainbow serpent nesting spot";
+            [controller.saveButton.target performSelector:controller.saveButton.action];
+        });
+
+        it(@"should set the title of the story to the text in the first cell", ^{
+            story.title should equal(controller.textFieldCell.textField.text);
         });
     });
 
