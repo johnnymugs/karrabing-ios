@@ -12,6 +12,23 @@ describe(@"StoryViewController", ^{
 
     beforeEach(^{
         controller = [[[StoryViewController alloc] init] autorelease];
+        controller.view should_not be_nil;
+    });
+
+    describe(@"textFieldCell", ^{
+        it(@"should exist", ^{
+            controller.textFieldCell should_not be_nil;
+        });
+
+        it(@"should set the placeholder text on the TextFieldCell to 'Title'", ^{
+            controller.textFieldCell.textField.placeholder should equal(@"Title");
+        });
+    });
+
+    describe(@"textViewCell", ^{
+        it(@"should exist", ^{
+            controller.textViewCell should_not be_nil;
+        });
     });
 
     describe(@"UITableViewDataSource protocol", ^{
@@ -43,12 +60,8 @@ describe(@"StoryViewController", ^{
                     cell = [controller tableView:controller.tableView cellForRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]];
                 });
 
-                it(@"should return a TextFieldCell", ^{
-                    cell should be_instance_of([TextFieldCell class]);
-                });
-
-                it(@"should set the placeholder text on the TextFieldCell to 'Title'", ^{
-                    ((TextFieldCell *)cell).textField.placeholder should equal(@"Title");
+                it(@"should return the textFieldCell", ^{
+                    cell should be_same_instance_as(controller.textFieldCell);
                 });
             });
 
@@ -57,8 +70,8 @@ describe(@"StoryViewController", ^{
                     cell = [controller tableView:controller.tableView cellForRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:1]];
                 });
 
-                it(@"should return a TextViewCell", ^{
-                    cell should be_instance_of([TextViewCell class]);
+                it(@"should return the textViewCell", ^{
+                    cell should be_same_instance_as(controller.textViewCell);
                 });
             });
         });

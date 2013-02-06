@@ -5,6 +5,8 @@
 @interface StoryViewController ()
 
 @property (nonatomic, strong, readwrite) Story *story;
+@property (nonatomic, strong, readwrite) TextFieldCell *textFieldCell;
+@property (nonatomic, strong, readwrite) TextViewCell *textViewCell;
 
 @end
 
@@ -27,6 +29,10 @@ enum {
 
 - (void)loadView {
     [super loadView];
+
+    self.textFieldCell = [[TextFieldCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"titleCell"];
+    self.textFieldCell.textField.placeholder = @"Title";
+    self.textViewCell = [[TextViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"storyCell"];
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -39,22 +45,9 @@ enum {
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     if (indexPath.section == TitleSection) {
-        TextFieldCell *textFieldCell = [tableView dequeueReusableCellWithIdentifier:@"titleCell"];
-
-        if (!textFieldCell) {
-            textFieldCell = [[TextFieldCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"titleCell"];
-            textFieldCell.textField.placeholder = @"Title";
-        }
-
-        return textFieldCell;
+        return self.textFieldCell;
     } else if (indexPath.section == StorySection) {
-        TextViewCell *textViewCell = [tableView dequeueReusableCellWithIdentifier:@"storyCell"];
-
-        if (!textViewCell) {
-            textViewCell = [[TextViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"storyCell"];
-        }
-
-        return textViewCell;
+        return self.textViewCell;
     }
     return nil;
 }
