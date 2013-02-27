@@ -35,6 +35,7 @@
 		AEA06871169CEF3000E70424 /* StoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEA06870169CEF3000E70424 /* StoryViewController.m */; };
 		AEA06872169CEF3000E70424 /* StoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEA06870169CEF3000E70424 /* StoryViewController.m */; };
 		AEA95A9E167AB5ED00A7C829 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEA95A9D167AB5ED00A7C829 /* CoreLocation.framework */; };
+		AEFACEC416DD881700053B9B /* StorySpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = AEFACEC316DD881700053B9B /* StorySpec.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		AEFCCE24166EBF7D00D5AA5A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEFCCE23166EBF7D00D5AA5A /* UIKit.framework */; };
 		AEFCCE26166EBF7D00D5AA5A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEFCCE25166EBF7D00D5AA5A /* Foundation.framework */; };
 		AEFCCE28166EBF7D00D5AA5A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEFCCE27166EBF7D00D5AA5A /* CoreGraphics.framework */; };
@@ -134,6 +135,7 @@
 		AEA0686F169CEF3000E70424 /* StoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryViewController.h; sourceTree = "<group>"; };
 		AEA06870169CEF3000E70424 /* StoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryViewController.m; sourceTree = "<group>"; };
 		AEA95A9D167AB5ED00A7C829 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		AEFACEC316DD881700053B9B /* StorySpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = StorySpec.mm; sourceTree = "<group>"; };
 		AEFCCE1F166EBF7D00D5AA5A /* Karrabing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Karrabing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEFCCE23166EBF7D00D5AA5A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		AEFCCE25166EBF7D00D5AA5A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -222,6 +224,7 @@
 		AE533FFF166EC0A900B5BEA1 /* Specs */ = {
 			isa = PBXGroup;
 			children = (
+				AEFACEBC16DD87E200053B9B /* Models */,
 				AE534002166EC0A900B5BEA1 /* Cedar.framework */,
 				AE534004166EC0A900B5BEA1 /* main.m */,
 				AE534000166EC0A900B5BEA1 /* Supporting Files */,
@@ -266,6 +269,14 @@
 				AE70ACFE16B897EA0079555D /* StoryViewController+Spec.m */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		AEFACEBC16DD87E200053B9B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AEFACEC316DD881700053B9B /* StorySpec.mm */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		AEFCCE14166EBF7D00D5AA5A = {
@@ -538,6 +549,7 @@
 			files = (
 				AE534005166EC0A900B5BEA1 /* main.m in Sources */,
 				AE3C957416A636FA004FE262 /* Story.m in Sources */,
+				AEFACEC416DD881700053B9B /* StorySpec.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
