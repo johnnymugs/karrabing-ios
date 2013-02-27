@@ -2,6 +2,7 @@
 #import "TextFieldCell.h"
 #import "TextViewCell.h"
 #import "Story.h"
+#import "Karrabing.h"
 
 using namespace Cedar::Matchers;
 using namespace Cedar::Doubles;
@@ -13,9 +14,14 @@ describe(@"StoryViewController", ^{
     __block Story *story;
 
     beforeEach(^{
+        UIViewController *viewController = [[[UIViewController alloc] init] autorelease];
+        UINavigationController *navController = [[[UINavigationController alloc] initWithRootViewController:viewController] autorelease];
+
         story = [[[Story alloc] init] autorelease];
         controller = [[[StoryViewController alloc] initWithStory:story] autorelease];
         controller.view should_not be_nil;
+
+        [navController pushViewController:controller animated:NO];
     });
 
     describe(@"saveButton", ^{
@@ -48,7 +54,7 @@ describe(@"StoryViewController", ^{
         });
     });
 
-    describe(@"on save button is tapped", ^{
+    describe(@"on save button tap", ^{
         beforeEach(^{
             controller.textFieldCell.textField.text = @"A rainbow serpent nesting spot";
             [controller.saveButton.target performSelector:controller.saveButton.action];
@@ -56,6 +62,14 @@ describe(@"StoryViewController", ^{
 
         it(@"should set the title of the story to the text in the first cell", ^{
             story.title should equal(controller.textFieldCell.textField.text);
+        });
+
+        it(@"should add the story to the list of stories", ^{
+            Karrabing.sharedInstance.stories should contain(story);
+        });
+
+        it(@"should pop the controller off the navigation stack", ^{
+            controller.navigationController.topViewController should_not be_same_instance_as(controller);
         });
     });
 

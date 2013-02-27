@@ -2,6 +2,7 @@
 #import "TextFieldCell.h"
 #import "TextViewCell.h"
 #import "Story.h"
+#import "Karrabing.h"
 
 @interface StoryViewController ()
 
@@ -79,6 +80,8 @@ enum {
 
 - (void)saveButtonWasTapped {
     self.story.title = self.textFieldCell.textField.text;
+    [Karrabing.sharedInstance addStory:self.story];
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 @end
