@@ -35,6 +35,7 @@
 		AEA06871169CEF3000E70424 /* StoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEA06870169CEF3000E70424 /* StoryViewController.m */; };
 		AEA06872169CEF3000E70424 /* StoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEA06870169CEF3000E70424 /* StoryViewController.m */; };
 		AEA95A9E167AB5ED00A7C829 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEA95A9D167AB5ED00A7C829 /* CoreLocation.framework */; };
+		AEE3E91516E6C83500DC5857 /* TextViewCellSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = AEE3E91416E6C83500DC5857 /* TextViewCellSpec.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		AEFACEC416DD881700053B9B /* StorySpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = AEFACEC316DD881700053B9B /* StorySpec.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		AEFACEC716DD8C8C00053B9B /* Karrabing.m in Sources */ = {isa = PBXBuildFile; fileRef = AEFACEC616DD8C8C00053B9B /* Karrabing.m */; };
 		AEFACEC816DD8C8C00053B9B /* Karrabing.m in Sources */ = {isa = PBXBuildFile; fileRef = AEFACEC616DD8C8C00053B9B /* Karrabing.m */; };
@@ -141,6 +142,7 @@
 		AEA0686F169CEF3000E70424 /* StoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryViewController.h; sourceTree = "<group>"; };
 		AEA06870169CEF3000E70424 /* StoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryViewController.m; sourceTree = "<group>"; };
 		AEA95A9D167AB5ED00A7C829 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		AEE3E91416E6C83500DC5857 /* TextViewCellSpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = TextViewCellSpec.mm; sourceTree = "<group>"; };
 		AEFACEC316DD881700053B9B /* StorySpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = StorySpec.mm; sourceTree = "<group>"; };
 		AEFACEC516DD8C8C00053B9B /* Karrabing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Karrabing.h; sourceTree = "<group>"; };
 		AEFACEC616DD8C8C00053B9B /* Karrabing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Karrabing.m; sourceTree = "<group>"; };
@@ -215,6 +217,7 @@
 				AE534017166ED31400B5BEA1 /* MyStoriesViewControllerSpec.mm */,
 				AE3C953B16A626C1004FE262 /* StoryViewControllerSpec.mm */,
 				AE3C954116A62E63004FE262 /* TextFieldCellSpec.mm */,
+				AEE3E91416E6C83500DC5857 /* TextViewCellSpec.mm */,
 				AE533FF0166EC06000B5BEA1 /* Cedar-iOS.framework */,
 				AE533FE8166EC06000B5BEA1 /* Supporting Files */,
 			);
@@ -566,6 +569,7 @@
 				AE70ACFF16B897EA0079555D /* StoryViewController+Spec.m in Sources */,
 				AEFACEC816DD8C8C00053B9B /* Karrabing.m in Sources */,
 				AEFACECF16DD8F3900053B9B /* Karrabing+Spec.m in Sources */,
+				AEE3E91516E6C83500DC5857 /* TextViewCellSpec.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

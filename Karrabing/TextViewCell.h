@@ -2,4 +2,6 @@
 
 @interface TextViewCell : UITableViewCell
 
+@property (weak, nonatomic, readonly) UITextView *textView;
+
 @end
