@@ -80,6 +80,7 @@ enum {
 
 - (void)saveButtonWasTapped {
     self.story.title = self.textFieldCell.textField.text;
+    self.story.content = self.textViewCell.textView.text;
     [Karrabing.sharedInstance addStory:self.story];
     [self.navigationController popViewControllerAnimated:YES];
 }

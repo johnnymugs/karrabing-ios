@@ -57,11 +57,16 @@ describe(@"StoryViewController", ^{
     describe(@"on save button tap", ^{
         beforeEach(^{
             controller.textFieldCell.textField.text = @"A rainbow serpent nesting spot";
+            controller.textViewCell.textView.text = @"Lorem ipsum like i give i crap";
             [controller.saveButton.target performSelector:controller.saveButton.action];
         });
 
         it(@"should set the title of the story to the text in the first cell", ^{
             story.title should equal(controller.textFieldCell.textField.text);
+        });
+
+        it(@"should set the story content to the text in the second cell", ^{
+            story.content should equal(@"Lorem ipsum like i give i crap");
         });
 
         it(@"should add the story to the list of stories", ^{
