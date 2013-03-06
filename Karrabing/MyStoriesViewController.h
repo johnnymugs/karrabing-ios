@@ -1,6 +1,6 @@
 #import <UIKit/UIKit.h>
 
-@interface MyStoriesViewController : UIViewController<UINavigationControllerDelegate, UIImagePickerControllerDelegate>
+@interface MyStoriesViewController : UITableViewController<UINavigationControllerDelegate, UIImagePickerControllerDelegate>
 
 @property (strong, nonatomic, readonly) UIBarButtonItem *cameraButton;
 

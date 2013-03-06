@@ -1,6 +1,7 @@
 #import "MyStoriesViewController.h"
 #import "StoryViewController+Spec.h"
 #import "Story.h"
+#import "Karrabing.h"
 
 using namespace Cedar::Matchers;
 using namespace Cedar::Doubles;
@@ -93,6 +94,59 @@ describe(@"MyStoriesViewController", ^{
 
             it(@"should dismiss presented view controller", ^{
                 controller.presentedViewController should be_nil;
+            });
+        });
+    });
+
+    describe(@"UITableViewDataSource protocol", ^{
+        describe(@"-numberOfSectionsInTableView:", ^{
+            it(@"should always be 1", ^{
+                [controller numberOfSectionsInTableView:controller.tableView] should equal(1);
+            });
+        });
+
+        describe(@"-tableView:numberOfRowsInSection:", ^{
+            context(@"when there are no stories", ^{
+                beforeEach(^{
+                    Karrabing.sharedInstance.stories should be_empty;
+                });
+
+                it(@"should be 0", ^{
+                    [controller tableView:controller.tableView numberOfRowsInSection:0] should equal(0);
+                });
+            });
+
+            context(@"when there are some stories", ^{
+                beforeEach(^{
+                    [Karrabing.sharedInstance addStory:[[Story alloc] init]];
+                    [Karrabing.sharedInstance addStory:[[Story alloc] init]];
+                    [Karrabing.sharedInstance addStory:[[Story alloc] init]];
+
+                    Karrabing.sharedInstance.stories should_not be_empty;
+                });
+
+                it(@"should return the number of stories", ^{
+                    [controller tableView:controller.tableView numberOfRowsInSection:0] should equal(3);
+                });
+            });
+        });
+
+        describe(@"-tableView:cellForRowAtIndexPath:", ^{
+            __block UITableViewCell *cell;
+            beforeEach(^{
+                Story *story = [[Story alloc] init];
+                story.title = @"Reamde";
+                [Karrabing.sharedInstance addStory:story];
+
+                cell = [controller tableView:controller.tableView cellForRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]];
+            });
+
+            it(@"should return a cell", ^{
+                cell should be_instance_of([UITableViewCell class]);
+            });
+
+            it(@"should set the text label's text of the cell to the story title", ^{
+                cell.textLabel.text should equal(@"Reamde");
             });
         });
     });
