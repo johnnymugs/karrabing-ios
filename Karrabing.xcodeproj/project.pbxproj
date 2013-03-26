@@ -43,6 +43,10 @@
 		AEFACECB16DD8CE100053B9B /* KarrabingSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = AEFACECA16DD8CE100053B9B /* KarrabingSpec.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		AEFACECF16DD8F3900053B9B /* Karrabing+Spec.m in Sources */ = {isa = PBXBuildFile; fileRef = AEFACECE16DD8F3900053B9B /* Karrabing+Spec.m */; };
 		AEFACED016DD8F3900053B9B /* Karrabing+Spec.m in Sources */ = {isa = PBXBuildFile; fileRef = AEFACECE16DD8F3900053B9B /* Karrabing+Spec.m */; };
+		AEFB7AD317025A9900A68FC3 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = AEFB7AD117025A9900A68FC3 /* Icon.png */; };
+		AEFB7AD417025A9900A68FC3 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = AEFB7AD117025A9900A68FC3 /* Icon.png */; };
+		AEFB7AD517025A9900A68FC3 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AEFB7AD217025A9900A68FC3 /* Icon@2x.png */; };
+		AEFB7AD617025A9900A68FC3 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AEFB7AD217025A9900A68FC3 /* Icon@2x.png */; };
 		AEFCCE24166EBF7D00D5AA5A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEFCCE23166EBF7D00D5AA5A /* UIKit.framework */; };
 		AEFCCE26166EBF7D00D5AA5A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEFCCE25166EBF7D00D5AA5A /* Foundation.framework */; };
 		AEFCCE28166EBF7D00D5AA5A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEFCCE27166EBF7D00D5AA5A /* CoreGraphics.framework */; };
@@ -149,6 +153,8 @@
 		AEFACECA16DD8CE100053B9B /* KarrabingSpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = KarrabingSpec.mm; sourceTree = "<group>"; };
 		AEFACECD16DD8F3900053B9B /* Karrabing+Spec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Karrabing+Spec.h"; sourceTree = "<group>"; };
 		AEFACECE16DD8F3900053B9B /* Karrabing+Spec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Karrabing+Spec.m"; sourceTree = "<group>"; };
+		AEFB7AD117025A9900A68FC3 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		AEFB7AD217025A9900A68FC3 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
 		AEFCCE1F166EBF7D00D5AA5A /* Karrabing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Karrabing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEFCCE23166EBF7D00D5AA5A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		AEFCCE25166EBF7D00D5AA5A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -304,6 +310,15 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		AEFB7ACA17025A5400A68FC3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AEFB7AD117025A9900A68FC3 /* Icon.png */,
+				AEFB7AD217025A9900A68FC3 /* Icon@2x.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		AEFCCE14166EBF7D00D5AA5A = {
 			isa = PBXGroup;
 			children = (
@@ -340,6 +355,7 @@
 		AEFCCE29166EBF7D00D5AA5A /* Karrabing */ = {
 			isa = PBXGroup;
 			children = (
+				AEFB7ACA17025A5400A68FC3 /* Resources */,
 				AE3C956F16A636C7004FE262 /* Models */,
 				AEFCCE32166EBF7D00D5AA5A /* AppDelegate.h */,
 				AEFCCE33166EBF7D00D5AA5A /* AppDelegate.m */,
@@ -518,6 +534,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				AE533FEC166EC06000B5BEA1 /* InfoPlist.strings in Resources */,
+				AEFB7AD417025A9900A68FC3 /* Icon.png in Resources */,
+				AEFB7AD617025A9900A68FC3 /* Icon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -529,6 +547,8 @@
 				AEFCCE36166EBF7D00D5AA5A /* Default.png in Resources */,
 				AEFCCE38166EBF7D00D5AA5A /* Default@2x.png in Resources */,
 				AEFCCE3A166EBF7D00D5AA5A /* Default-568h@2x.png in Resources */,
+				AEFB7AD317025A9900A68FC3 /* Icon.png in Resources */,
+				AEFB7AD517025A9900A68FC3 /* Icon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
