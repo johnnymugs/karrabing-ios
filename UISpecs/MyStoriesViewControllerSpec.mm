@@ -66,6 +66,17 @@ describe(@"MyStoriesViewController", ^{
         controller.title should equal(@"My Stories");
     });
 
+    describe(@"viewWillAppear:", ^{
+        beforeEach(^{
+            spy_on(controller.tableView);
+            [controller viewWillAppear:NO];
+        });
+
+        it(@"should reload the table view", ^{
+            controller.tableView should have_received("reloadData");
+        });
+    });
+
     describe(@"UIImagePickerControllerDelegate protocol", ^{
         describe(@"imagePickerController:didFinishPickingMediaWithInfo:", ^{
             __block UIImage *blankImage;

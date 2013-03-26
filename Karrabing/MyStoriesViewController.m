@@ -12,8 +12,7 @@ static NSString * const kStoryCellIdentifier = @"story-cell";
 
 @implementation MyStoriesViewController
 
-- (id)init
-{
+- (id)init {
     self = [super initWithNibName:nil bundle:nil];
     if (self) {
         self.title = @"My Stories";
@@ -32,6 +31,11 @@ static NSString * const kStoryCellIdentifier = @"story-cell";
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
     [self doesNotRecognizeSelector:_cmd];
     return nil;
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [self.tableView reloadData];
 }
 
 #pragma mark - UIImagePickerControllerDelegate protocol
