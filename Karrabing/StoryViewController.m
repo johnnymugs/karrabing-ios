@@ -10,6 +10,7 @@
 @property (nonatomic, strong, readwrite) UIBarButtonItem *saveButton;
 @property (nonatomic, strong, readwrite) TextFieldCell *textFieldCell;
 @property (nonatomic, strong, readwrite) TextViewCell *textViewCell;
+@property (nonatomic, strong, readwrite) UIImageView *siteImageView;
 
 @end
 
@@ -52,6 +53,12 @@ enum {
     self.textFieldCell = [[TextFieldCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"titleCell"];
     self.textFieldCell.textField.placeholder = @"Title";
     self.textViewCell = [[TextViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"storyCell"];
+    self.tableView.tableHeaderView = [[UIView  alloc] initWithFrame:CGRectMake(0, 0, 320, 120)];
+
+    self.siteImageView = [[UIImageView alloc] initWithFrame:CGRectMake(5,5, 110, 110)];
+    self.siteImageView.contentMode = UIViewContentModeScaleAspectFit;
+    self.siteImageView.image = [UIImage imageWithData:self.story.imageJPEGData];
+    [self.tableView.tableHeaderView addSubview:self.siteImageView];
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {

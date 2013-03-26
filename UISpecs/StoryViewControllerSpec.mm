@@ -1,8 +1,9 @@
 #import "StoryViewController.h"
 #import "TextFieldCell.h"
+#import "UIImage+Spec.h"
 #import "TextViewCell.h"
-#import "Story.h"
 #import "Karrabing.h"
+#import "Story.h"
 
 using namespace Cedar::Matchers;
 using namespace Cedar::Doubles;
@@ -18,6 +19,8 @@ describe(@"StoryViewController", ^{
         UINavigationController *navController = [[[UINavigationController alloc] initWithRootViewController:viewController] autorelease];
 
         story = [[[Story alloc] init] autorelease];
+        story.imageJPEGData = UIImageJPEGRepresentation([UIImage imageNamed:@"Icon"], 0.3f);
+
         controller = [[[StoryViewController alloc] initWithStory:story] autorelease];
         controller.view should_not be_nil;
 
@@ -43,6 +46,16 @@ describe(@"StoryViewController", ^{
     describe(@"textViewCell", ^{
         it(@"should exist", ^{
             controller.textViewCell should_not be_nil;
+        });
+    });
+
+    describe(@"siteImageView", ^{
+        it(@"should be a subview of the tableView's header view", ^{
+            controller.tableView.tableHeaderView.subviews should contain(controller.siteImageView);
+        });
+
+        it(@"should use the image data from the story", ^{
+            [controller.siteImageView.image isEqualToByBytes:[UIImage imageWithData:story.imageJPEGData]] should be_truthy;
         });
     });
 
