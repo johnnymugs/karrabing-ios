@@ -65,7 +65,9 @@ static NSString * const kStoryCellIdentifier = @"story-cell";
     if (!cell) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:kStoryCellIdentifier];
     }
-    cell.textLabel.text = [[Karrabing.sharedInstance.stories objectAtIndex:indexPath.row] title];
+    Story *story = [Karrabing.sharedInstance.stories objectAtIndex:indexPath.row];
+    cell.textLabel.text = story.title;
+    cell.imageView.image = [UIImage imageWithData:story.imageJPEGData];
 
     return cell;
 }

@@ -2,6 +2,7 @@
 #import "StoryViewController+Spec.h"
 #import "Story.h"
 #import "Karrabing.h"
+#import "UIImage+Spec.h"
 
 using namespace Cedar::Matchers;
 using namespace Cedar::Doubles;
@@ -144,9 +145,11 @@ describe(@"MyStoriesViewController", ^{
 
         describe(@"-tableView:cellForRowAtIndexPath:", ^{
             __block UITableViewCell *cell;
+            __block Story *story;
             beforeEach(^{
-                Story *story = [[Story alloc] init];
+                story = [[Story alloc] init];
                 story.title = @"Reamde";
+                story.imageJPEGData = UIImageJPEGRepresentation([UIImage imageNamed:@"Icon"], 0.3f);
                 [Karrabing.sharedInstance addStory:story];
 
                 cell = [controller tableView:controller.tableView cellForRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]];
@@ -157,7 +160,11 @@ describe(@"MyStoriesViewController", ^{
             });
 
             it(@"should set the text label's text of the cell to the story title", ^{
-                cell.textLabel.text should equal(@"Reamde");
+                cell.textLabel.text should equal(story.title);
+            });
+
+            it(@"should set the text label's image text of the cell to the story image", ^{
+                [cell.imageView.image isEqualToByBytes:[UIImage imageWithData:story.imageJPEGData]] should be_truthy;
             });
         });
     });
