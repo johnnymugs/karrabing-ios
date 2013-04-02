@@ -20,7 +20,11 @@ Karrabing *_sharedKarrabingInstance = nil;
 
 - (id)init {
     if (self = [super init]) {
-        self.mutableStories = [NSMutableArray array];
+        if ([[NSFileManager defaultManager] fileExistsAtPath:Karrabing.storiesPath]) {
+            self.mutableStories = [NSKeyedUnarchiver unarchiveObjectWithFile:Karrabing.storiesPath];
+        } else {
+            self.mutableStories = [NSMutableArray array];
+        }
     }
     return self;
 }
@@ -31,6 +35,13 @@ Karrabing *_sharedKarrabingInstance = nil;
 
 - (void)addStory:(Story *)story {
     [self.mutableStories addObject:story];
+    [NSKeyedArchiver archiveRootObject:self.mutableStories toFile:Karrabing.storiesPath];
+}
+
+#pragma mark - private
++ (NSString *)storiesPath {
+    NSString *documentsDir = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
+    return [documentsDir stringByAppendingPathComponent:@"stories"];
 }
 
 @end

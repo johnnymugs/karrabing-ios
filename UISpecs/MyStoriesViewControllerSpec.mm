@@ -153,6 +153,8 @@ describe(@"MyStoriesViewController", ^{
                 [Karrabing.sharedInstance addStory:story];
 
                 cell = [controller tableView:controller.tableView cellForRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]];
+
+                [Karrabing.sharedInstance.stories count] should equal(1);
             });
 
             it(@"should return a cell", ^{
